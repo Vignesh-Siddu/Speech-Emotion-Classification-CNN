@@ -1,40 +1,26 @@
-# 🎙️ Speech Emotion Classification using CNN
+# Speech Emotion Classification using CNN
 
 A deep learning project that classifies human speech into **8 emotion categories** using a **Convolutional Neural Network (CNN)** trained on the **RAVDESS** dataset.
 
 ---
 
-## 📌 Features
+## Project Overview
 
-- Classifies speech into **8 emotions**
-- Converts speech audio into **log-Mel spectrograms**
-- Implements a **CNN** using TensorFlow/Keras
-- Performs audio preprocessing with **Librosa**
-- Trains and evaluates the model on the **RAVDESS** dataset
+This project performs speech emotion recognition by converting audio recordings into log-Mel spectrograms and using a CNN to classify emotions from speech signals.
 
 ---
 
-## 🔄 Workflow
+## Features
 
-```text
-Speech Audio (.wav)
-        │
-        ▼
-Audio Preprocessing (Librosa)
-        │
-        ▼
-Log-Mel Spectrogram Generation
-        │
-        ▼
-CNN Model (TensorFlow/Keras)
-        │
-        ▼
-Emotion Prediction
-```
+- Classifies speech into 8 emotion categories
+- Audio preprocessing using Librosa
+- Log-Mel spectrogram generation
+- CNN implementation using TensorFlow/Keras
+- Model training and evaluation on the RAVDESS dataset
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies
 
 - Python
 - TensorFlow / Keras
@@ -45,7 +31,7 @@ Emotion Prediction
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 This project uses the **RAVDESS (Ryerson Audio-Visual Database of Emotional Speech and Song)** dataset.
 
@@ -62,9 +48,9 @@ Emotion classes:
 
 ---
 
-## 🧠 Model Architecture
+## Workflow
 
-```
+```text
 Speech Audio (.wav)
         │
         ▼
@@ -74,7 +60,7 @@ Audio Preprocessing
 Log-Mel Spectrogram
         │
         ▼
-CNN
+CNN Model
         │
         ▼
 Emotion Prediction
@@ -82,29 +68,7 @@ Emotion Prediction
 
 ---
 
-## 🚀 How to Run
-
-Clone the repository
-
-```bash
-git clone https://github.com/Vignesh-Siddu/Speech-Emotion-Classification-CNN.git
-```
-
-Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the project
-
-```bash
-python cnn_emotion.py
-```
-
----
-
-## 📊 Results
+## Results
 
 ### Log-Mel Spectrogram
 
@@ -131,12 +95,13 @@ python cnn_emotion.py
 | Training Accuracy | ~91% |
 | Validation Accuracy | ~50% |
 
-The model successfully classifies speech into eight emotion categories. The difference between training and validation accuracy indicates overfitting, leaving room for future improvements such as data augmentation and model tuning.
+The model successfully classifies speech into eight emotion categories. The gap between training and validation accuracy indicates overfitting, which can be reduced through data augmentation and further model tuning.
+
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
-- Improve generalization using data augmentation
+- Improve model generalization using data augmentation
 - Experiment with deeper CNN architectures
 - Add real-time microphone emotion recognition
-- Deploy as a web application
+- Deploy the model as a web application
