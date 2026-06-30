@@ -1,0 +1,8 @@
+emotion_env/
+dataset/
+__pycache__/
+*.pyc
+.vscode/
+.ipynb_checkpoints/
+Thumbs.db
+.DS_Store
