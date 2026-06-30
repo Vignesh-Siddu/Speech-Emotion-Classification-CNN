@@ -14,6 +14,26 @@ A deep learning project that classifies human speech into **8 emotion categories
 
 ---
 
+## 🔄 Workflow
+
+```text
+Speech Audio (.wav)
+        │
+        ▼
+Audio Preprocessing (Librosa)
+        │
+        ▼
+Log-Mel Spectrogram Generation
+        │
+        ▼
+CNN Model (TensorFlow/Keras)
+        │
+        ▼
+Emotion Prediction
+```
+
+---
+
 ## 🛠️ Technologies Used
 
 - Python
@@ -84,13 +104,34 @@ python cnn_emotion.py
 
 ---
 
-## 📈 Results
+## 📊 Results
 
-- Training Accuracy: ~91%
-- Validation Accuracy: ~50%
+### Log-Mel Spectrogram
 
-The model successfully classifies speech into eight emotion categories. The gap between training and validation accuracy indicates overfitting, which can be improved with additional data augmentation and model tuning.
+![Spectrogram](screenshots/spectrogram.png)
 
+---
+
+### Training Accuracy
+
+![Accuracy](screenshots/accuracy_curve.png)
+
+---
+
+### Training Loss
+
+![Loss](screenshots/loss_curve.png)
+
+---
+
+### Performance
+
+| Metric | Value |
+|--------|------:|
+| Training Accuracy | ~91% |
+| Validation Accuracy | ~50% |
+
+The model successfully classifies speech into eight emotion categories. The difference between training and validation accuracy indicates overfitting, leaving room for future improvements such as data augmentation and model tuning.
 ---
 
 ## 🔮 Future Improvements
