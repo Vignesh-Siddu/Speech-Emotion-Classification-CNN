@@ -1,8 +1,24 @@
+# Virtual Environment
 emotion_env/
+
+# Dataset
 dataset/
+
+# Python
 __pycache__/
 *.pyc
+
+# VS Code
 .vscode/
+
+# Jupyter
 .ipynb_checkpoints/
+
+# OS Files
 Thumbs.db
 .DS_Store
+
+# Trained models
+model/*.keras
+model/*.h5
+model/*.pkl
